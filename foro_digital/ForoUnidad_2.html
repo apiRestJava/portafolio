@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Foro de Debate</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>💬 Foro de Debate</h1>
+    <div class="debate-box">
+      <h2>Estimad@ estudiante revise la lectura: <span class="highlight">"Importancia de la formación ética de la abogacía"</span>?</h2>
+      <h2>de Elsa Roca-Moreyra Salonen y presente sus aportes en atención a las siguientes preguntas:</h2>
+      <h4>1. A partir del análisis de la lectura, en su reflexión personal: ¿Cuál es la importancia de la formación ética de la abogacía?</h4>
+      <h4>2. Desde el ámbito de la deontología jurídica ¿Qué aspectos considera usted como atributo (s) de un buen abogad@?</h4>
+      <p>Responda a las preguntas propuestas y comente una de las intervenciones que ha realizado alguno de sus compañeros.</p>
+    </div>
+    <form id="foroForm">
+      <input type="text" id="autor" placeholder="Tu nombre" required>
+      <textarea id="comentario" rows="4" placeholder="Escribe tu comentario..." required></textarea>
+      <button type="submit">➕ Añadir nuevo tema de debate</button>
+    </form>
+    <div id="foroMensajes" class="mensajes"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

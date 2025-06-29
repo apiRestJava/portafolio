@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Foro de Debate</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>💬 Foro de Debate</h1>
+    <div class="debate-box">
+      <h2>1. ¿Qué es el <span class="highlight">Constitucionalismo Garantista</span>?</h2>
+      <h2>2. ¿Cuál es su posición personal respecto al argumento desarrollado por el jurista Luigi Ferrajoli?</h2>
+      <p>Responda las preguntas y comente una intervención de algún compañero.</p>
+    </div>
+    <form id="foroForm">
+      <input type="text" id="autor" placeholder="Tu nombre" required>
+      <textarea id="comentario" rows="4" placeholder="Escribe tu comentario..." required></textarea>
+      <button type="submit">➕ Añadir nuevo tema de debate</button>
+    </form>
+    <div id="foroMensajes" class="mensajes"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Foro de Debate</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>💬 Foro de Debate</h1>
+    <div class="debate-box">
+      <h2>Estimad@ estudiante visualice con mucha atención el video sobre la distinción entre casos judiciales fáciles y difíciles y correspondientemente entre justificación interna y externa es básicamente aceptable, pero necesita ser precisada y desarrollada; presentado por el jurista y filósofo Manuel Atienza (7:21 minutos) .
+      </h2>
+      <h2>Analice los argumentos y presente sus aportes en atención a las siguientes preguntas:</h2>
+      <h4>1. ¿Cuál es la distinción entre casos judiciales fáciles y difíciles?</h4>
+      <h4>2. ¿En qué consiste la justificación interna y externa de las decisiones judiciales?</h4>
+      <p>Responda a las preguntas propuestas y comente una de las intervenciones que ha realizado alguno de sus compañeros.</p>
+    </div>
+    <form id="foroForm">
+      <input type="text" id="autor" placeholder="Tu nombre" required>
+      <textarea id="comentario" rows="4" placeholder="Escribe tu comentario..." required></textarea>
+      <button type="submit">➕ Añadir nuevo tema de debate</button>
+    </form>
+    <div id="foroMensajes" class="mensajes"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
