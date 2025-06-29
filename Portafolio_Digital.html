@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio Digital</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f6f6f6; /*Fondo general*/
+      color: #000000; /*Color de Letras generales*/
+      line-height: 1.6;
+      padding: 0 20px;
+    }
+    header {
+      background-color: #ffffff;/*Color de Navegador*/
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid #ddd; /*Color de Separador Navar*/
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    header h1 { color: #022952; } /*Color de botón Navegador*/
+   nav a {
+  margin-left: 10px;
+  background-color: #022952;/*Color de botón Navegador*/
+  color: white; /*Color de Litra Navegador*/
+  padding: 8px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+nav a:hover {
+  background-color: #0056b3;  /*Color de botón Navegador con mouse puesta*/
+}
+
+    main { margin-top: 30px; }
+    .card {
+      background: #bbbec0; /*Color de fondo Presentación*/
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 30px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.955); /*Color de borde Presentación*/
+    }
+    .grid-2 {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    .checklist li {
+      list-style: none;
+      margin-bottom: 5px;
+    }
+    .checklist li::before { content: "✅ "; }
+    .unidad {
+      background: #fff; /*Color de fondo de cuadro mayor*/
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 30px;
+    }
+    .unidad1 h2 { background-color: #007bff; color: #fff; padding: 10px; border-radius: 5px; }
+    .unidad2 h2 { background-color: #28a745; color: #fff; padding: 10px; border-radius: 5px; }
+    .unidad3 h2 { background-color: #6f42c1; color: #fff; padding: 10px; border-radius: 5px; }
+    .unidad4 h2 { background-color: #fd7e14; color: #fff; padding: 10px; border-radius: 5px; }
+    .videos h2  { background-color: #dc3545; color: #fff; padding: 10px; border-radius: 5px; }
+    .semanas {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 15px;
+    }
+    .semana {
+      background-color: #00000015;
+      padding: 15px;
+      border-radius: 8px;
+      flex: 1 1 220px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+    .footer {
+      background-color: #000000e8;
+      padding: 15px;
+      border-radius: 8px;
+      flex: 1 1 220px;
+      box-shadow: 0 1px 3px rgb(255, 255, 255);
+    }
+    .semana h4 { margin-bottom: 10px; }
+    .semana ul { list-style: none; padding-left: 0; }
+    .semana li { margin-bottom: 5px; }
+    footer {
+      text-align: center;
+      font-size: 0.9em;
+      color: #777777;
+      margin-top: 50px;
+    }
+    .galeria {
+      display: grid;
+      grid-template-columns: repeat(1, 2fr); /* dos columnas */
+      gap: 20px; /* espacio entre imágenes */
+      /*justify-items: center;*/ /* centra horizontalmente */
+      align-items: center; /* centra verticalmente */
+    }
+
+    .galeria img {
+      width: 700px; /* tamaño específico */
+      height: auto;
+      object-fit: cover; /* mantiene proporción o recorta */
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1><svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 0 24 24" width="48px" fill="#2854C5"><path d="M0 0h24v24H0z" fill="none"/><path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3 1 9l11 6 9-4.91V17h2V9L12 3z"/></svg> Portafolio Digital</h1>
+    <nav>
+      <a href="#presentacion">Presentación</a>
+      <a href="#unidad1">UNIDAD I</a>
+      <a href="#unidad2">UNIDAD II</a>
+      <a href="#unidad3">UNIDAD III</a>
+      <a href="#unidad4">UNIDAD IV</a>
+      <a href="#videos">Videos</a>
+    </nav>
+  </header>
+
+    <section id="presentacion" class="card">
+      <h2>📄 PRESENTACIÓN</h2>
+      <div class="grid-2">
+        <div>
+          <h3>Información Personal</h3>
+          <p><strong>Nombre:</strong> Mitacc Gutierrez Kevin</p>
+          <p><strong>Email:</strong> 60920209@continental.edu.pe</p>
+          <p><strong>ID:</strong> 60920209</p>
+          <p><strong>Periodo:</strong> 2025</p>
+        </div>
+        <div class="semana">
+          <h4>🗂️ RAZONAMIENTO Y ARGUMENTACIÓN JURÍDICA-ASUC-00748-26041-202510</h4>
+          <ul>
+            <li>📘 <a href="https://estudiantesavp.ucontinental.edu.pe/pluginfile.php/1609752/mod_resource/content/0/PPT%20de%20presentaci%C3%B3n%20de%20asignatura.pdf" target="_blank">PRESENTACION DE ASIGNATURA(PDF)⬇️</a></li>
+            <li>📘 <a href="https://repositorio.continental.edu.pe/bitstream/20.500.12394/10742/30/DO_FDE_312_SI_ASUC00748_2025.pdf" target="_blank">SÍLABO (PDF)⬇️</a></li>
+            <li>📘 <a href="https://repositorio.continental.edu.pe/bitstream/20.500.12394/11012/5/DO_FDE_312_GT_ASUC00748_2025.pdf" target="_blank">Guía De Trabajo (PDF)⬇️</a></li>
+            <li>📚 <a href="https://repositorio.continental.edu.pe/bitstream/20.500.12394/10742/29/HC_ASUC00748_Razonamiento_y_Argumentaci%c3%b3n_Jur%c3%addica_2025.pdf" target="_blank">Calendario Pregrado (PDF)⬇️</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Objetivos del Curso</h3>
+          <ul class="checklist">
+            <li>Dominar los conceptos fundamentales</li>
+            <li>Desarrollar habilidades prácticas</li>
+            <li>Aplicar conocimientos en proyectos</li>
+            <li>Prepararse para evaluaciones</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+<!-- PRESENTACION -->
+        <section id="#" class="#">
+      <h2>📘 PRESENTACIÓN</h2>
+      <p>Estimad@s estudiantes, bienvenid@s a la asignatura de Razonamiento y Argumentación Jurídica.</p>
+<h1>Sumilla:</h1>
+<p>La asignatura Razonamiento y Argumentación Jurídica es de naturaleza obligatoria para los estudiantes de la Escuela Académico Profesional de Derecho; es prerrequisito de la asignatura Deontología Jurídica. Se ubica en el noveno período de estudios y es una asignatura de especialidad que busca desarrollar la competencia específica Deontología Jurídica en el nivel logrado de conocimiento de principios éticos profesionales.
+<h1>La asignatura comprende:</h1>
+La asignatura comprende el estudio de la relación entre argumentación y derecho, el análisis y evaluación de las argumentaciones, así como el modo de argumentar.
+<h1>Resultado de aprendizaje:</h1>
+Al finalizar la asignatura, el estudiante será capaz de evaluar argumentos jurídicos, debidamente justificados y dentro de un marco ético profesional.</p>
+      <div class="galeria">
+        <div class="galeria">
+          <h4>📅 PRESENTACIÓN DE LA ASIGNATURA</h4>
+          <ul>
+            <img src="https://estudiantesavp.ucontinental.edu.pe/pluginfile.php/748295/mod_label/intro/Taxonomia%20bLOOM.jpg?time=1709675602443" alt="Taxonomía Bloom">
+            <img src="https://estudiantesavp.ucontinental.edu.pe/pluginfile.php/748296/mod_label/intro/TAXONOMI%CC%81A-DE-BLOOM.jpeg" alt="Descripción de la imagen">
+            <img src="https://estudiantesavp.ucontinental.edu.pe/pluginfile.php/748297/mod_label/intro/habilidades%20blandas.png" alt="Descripción de la imagen">
+            <img src="https://estudiantesavp.ucontinental.edu.pe/pluginfile.php/748298/mod_label/intro/20%20habilidades%20blandas.jpg" alt="Descripción de la imagen">
+            <img src="https://estudiantesavp.ucontinental.edu.pe/pluginfile.php/748299/mod_label/intro/ense%C3%B1anza%20aprendizaje.jpg" alt="Descripción de la imagen">
+            <img src="https://estudiantesavp.ucontinental.edu.pe/pluginfile.php/748300/mod_label/intro/la%20didactica.jpg" alt="Descripción de la imagen">
+            <img src="https://estudiantesavp.ucontinental.edu.pe/pluginfile.php/748301/mod_label/intro/ACTIVIDADES%20QUE%20HAN%20PREDOMINADO%20EN%20NUESTRO%20CURSO.jpg" alt="Descripción de la imagen">
+            <img src="https://estudiantesavp.ucontinental.edu.pe/pluginfile.php/748302/mod_label/intro/Clases%20tecnicas.jpg" alt="Descripción de la imagen">
+          </ul>
+        </div>
+        
+      <!-- BIBLIOGRAFÍA  BÁSICA -->
+      <section id="videos" class="videos videos h2">
+      <h2>🗂️ BIBLIOGRAFÍA</h2>
+<h3>Resultado de aprendizaje de la unidad:</h3>
+      <div class="semanas">
+        <div class="semana">
+          <h4>📅 BIBLOGRAFÍA BÁSICA</h4>
+          <ul>
+            <li>📚 <a href="https://estudiantesavp.ucontinental.edu.pe/pluginfile.php/748304/mod_resource/content/1/Manuel%20Atienza%20-%20Curso%20de%20Argumentaci%C3%B3n%20Jur%C3%ADdica.pdf" target="_blank">
+            Manuel Atienza - Curso de Argumentación Jurídica </a></li>
+            <li>📚 <a href="https://estudiantesavp.ucontinental.edu.pe/pluginfile.php/748305/mod_resource/content/0/Gu%C3%ADa%20resumen%20del%20estilo%20APA%20-%20S%C3%A9ptima%20edici%C3%B3n.pdf" target="_blank">
+            Guía resumen del estilo APA - Séptima edición </a></li>
+            <li>📚 <a href="https://estudiantesavp.ucontinental.edu.pe/pluginfile.php/748306/mod_resource/content/0/Constituci%C3%B3n%20Pol%C3%ADtica%20del%20Per%C3%BA%20%28actualizado%20a%20marzo%202019%29.pdf" target="_blank">
+            Constitución Política del Perú (actualizado a marzo 2019) </a></li>
+          </ul>
+        </div>
+        <div class="semana">
+          <h4>📅 BIBLOGRAFÍA COMPLEMENTARIA</h4>
+          <ul>
+            <li>📚 <a href="https://estudiantesavp.ucontinental.edu.pe/pluginfile.php/748308/mod_resource/content/2/El%20derecho%20como%20argumentaci%C3%B3n%20-%20Manuel%20Atienza.pdf" target="_blank">
+            El derecho como argumentación - Manuel Atienza </a></li>
+            <li>📚 <a href="https://estudiantesavp.ucontinental.edu.pe/pluginfile.php/748309/mod_resource/content/3/Importancia%20de%20la%20formaci%C3%B3n%20%C3%A9tica%20de%20la%20abogac%C3%ADa.pdf" target="_blank">
+            Importancia de la formación ética de la abogacía </a></li>
+            <li>📚 <a href="https://estudiantesavp.ucontinental.edu.pe/pluginfile.php/748310/mod_resource/content/4/La%20teor%C3%ADa%20de%20la%20argumentaci%C3%B3n%20jur%C3%ADdica%20en%20Robert%20Alexy.pdf" target="_blank">
+            La teoría de la argumentación jurídica en Robert Alexy </a></li>
+            <li>📚 <a href="https://estudiantesavp.ucontinental.edu.pe/pluginfile.php/748311/mod_resource/content/5/Las%20razones%20del%20derecho.%20Teor%C3%ADas%20de%20la%20argumentaci%C3%B3n%20jur%C3%ADdica.pdf" target="_blank">
+            Las razones del derecho. Teorías de la argumentación jurídica </a></li>
+          </ul>
+     
+        </div>
+        <div class="semana">
+          <h4>📅 HUB DE INFORMACIÓN</h4>
+          <ul>
+            <li>📚 <a href="https://hubinformacion.continental.edu.pe/" target="_blank">
+            Busca en el catálogo en línea</a></li>
+            <li>📚 <a href="https://blog.continental.edu.pe/hubinformacion/2022/03/18/reserva-de-libros%f0%9f%93%9a-el-hub-esta-de-vuelta/" target="_blank">
+            Reserva de libros</a></li>
+            <li>📚 <a href="https://hubinformacion.continental.edu.pe/biblioteca-virtual/" target="_blank">
+            Biblioteca virtual</a></li>
+            <li>📚 <a href="https://estudiantesavp.ucontinental.edu.pe/pluginfile.php/748316/mod_resource/content/1/Dec%C3%A1logo%20del%20abogado%20-%20Couture.jpg" target="_blank">
+            Decálogo del abogado - Eduardo Couture 
+</a></li>
+          </ul>
+        </div>
+        <div class="semana">
+          <h4>📅 Delegado y Grupo de Coordinación </h4>
+          <ul>
+            <li>Estimad@s estudiantes:</li>
+            <li>En nuestra sección, hemos elegido a su compañero<strong>Cristian Tumbalobos </strong>como<strong> delegado del curso</strong>, asimismo, se ha creado nuestro grupo de whatsapp para las coordinaciones académicas.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Unidad 1 -->
+      <section id="unidad1" class="unidad unidad1">
+      <h2>📘 UNIDAD I: Derecho y Argumentación</h2>
+<h3>Resultado de aprendizaje de la unidad:</h3>
+Al finalizar la Unidad, el estudiante será capaz de analizar las concepciones del derecho y de la argumentación jurídica para la interpretación y aplicación del derecho, en el actual contexto del Estado Constitucional de Derecho.
+      <h5>Comparto los materiales de enseñanza y aprendizaje que serán utilizados en clase, siendo importante que antes de asistir a nuestras sesiones
+         deban revisarlas; de manera que, el desarrollo de nuestra clase sea más dinámica y participativa.</h5>
+      <div class="semanas">
+        <div class="semana">
+          <h4>📅 Semana 1</h4>
+          <ul>
+            <li>📘 <a href="UNIDADES/TEMA 1 - Concepciones del derecho 2025-10.pdf" target="_blank"><strong>PRESENTACIONES</strong></a></li>
+            <li>📚 <a href="UNIDADES/El derecho como argumentación - Manuel Atienza.pdf" target="_blank">Lectura (ver)⬇️</a></li>
+            <li>📝 <a href="https://estudiantesavp.ucontinental.edu.pe/pluginfile.php/1581761/mod_resource/content/0/Gu%C3%ADa%20N.%C2%B0%201%20-%20Concepciones%20del%20derecho.pdf" target="_blank">
+            Guía N.° 1 - Concepciones del derecho</a></li>
+            <li>🧠 Actividad N.° 1: Concepciones del Derecho </li>
+            <li>🗺️ <strong>Actividad:</strong> Realicen un mapa conceptual con la herramienta digital  <strong>CANVA</strong> de manera colaborativa sobre las concepciones del Derecho:</li>
+            <li>🔗 <a href="https://www.canva.com/es_us/login/" target="_blank">Ir a CANVA</a></li>
+          </ul>
+          </ul>
+        </div>
+        <div class="semana">
+          <h4>📅 Semana 2</h4>
+          <ul>
+            <li>📘 <a href="UNIDADES/Tema 2 - El constitucionalismo o post positivismo 2025-10.pdf" target="_blank"><strong>PRESENTACIONES</strong></a></li>
+            <li>📝 <a href="https://estudiantesavp.ucontinental.edu.pe/pluginfile.php/748332/mod_resource/content/4/Gu%C3%ADa%20N.%C2%B0%202%20-%20El%20constitucionalismo%20o%20post-positivismo.pdf" target="_blank">Guía N.° 2 - El constitucionalismo o post-positivismo</a></li>
+            <li>📚 <a href="UNIDADES/CLASE 2-  LECTURA - Constitucionalismo-principialista-y-constitucionalismo-garantista.pdf" target="_blank">Lectura (ver)⬇️</a></li>
+            <li>🧠 Actividad N.° 2: Constitucionalismo o Post Positivismo</li>
+            <li>🗺️ <strong>Actividad:</strong> Realicen un mapa mental con la herramienta digital <strong>MindMeister</strong> de manera colaborativa.</li>
+            <li>🔗 <a href="https://www.mindmeister.com/es" target="_blank">Ir a MindMeister</a></li>
+          </ul>
+     
+        </div>
+        <div class="semana">
+          <h4>📅 Semana 3</h4>
+          <ul>
+            <li>📘 <a href="UNIDADES/Tema 3 - Concepciones de la argumentacion jurídica 2025-10.pdf" target="_blank"><strong>PRESENTACIONES</strong></a></li>
+            <li>📚 <a href="Lectura/Lecturas/La concepción formal, material y pragmática de la argumentación jurídica y su aplicación en el análisis de sentencias.pdf" target="_blank">
+            Lectura (ver)⬇️</a></li>
+            <li>📝 <a href="https://estudiantesavp.ucontinental.edu.pe/pluginfile.php/748341/mod_resource/content/5/Gu%C3%ADa%20N.%C2%B0%203%20-%20Concepciones%20de%20la%20argumentaci%C3%B3n%20jur%C3%ADdica.pdf" target="_blank">
+            Guía N.° 3 - Concepciones de la argumentación jurídica</a></li>
+            <li>🧠 Actividad N.° 3: Concepciones de la argumentación jurídica</li>
+            <li>🗺️ <strong>Actividad:</strong>
+              <p>1. Realicen la búsqueda de información sobre las concepciones de la argumentación jurídica.</p>
+              <p>2. Utiliza la herramienta</p>  <strong>GOOGLE DOCS</strong> y desarrollen de manera colaborativa sobre concepciones de la argumentación jurídica (cada grupos debe enviar enlace)</li>
+            <li>🔗 <a href="https://docs.google.com/document/create?hl=es" target="_blank">Enlace google docs:</a></li>
+          </ul>
+        </div>
+        <div class="semana">
+          <h4>📅 Semana 4</h4>
+          <ul>
+            <li>📘 <a href="UNIDADES/Tema 4 - Argumentacion y falacias IA.pdf" target="_blank"><strong>PRESENTACIONES</strong></a></li>
+            <li>📚 <a href="Lectura/LecturaSemana4/" target="_blank">
+            Lectura (ver)⬇️</a></li>
+            <li>📝 <a href="https://estudiantesavp.ucontinental.edu.pe/pluginfile.php/1721490/mod_resource/content/0/Gu%C3%ADa%20N.%C2%B0%204%20-%20Argumentaci%C3%B3n%20y%20falacias.pdf" target="_blank">
+            Guía N.° 4 - Argumentación y falacias</a></li>
+            <li>🧠 Actividad N.° 4: Argumentación y falacias</li>
+            <li>🗺️ <strong>Actividad:</strong>
+              <p>Realicen un mapa conceptual con la herramienta digital</p><strong>LUCIDCHART</strong>de manera colaborativa sobre la argumentación y falacias.</li>
+            <li>🔗 <a href="https://www.lucidchart.com/pages/es/ejemplos/mapa-conceptual" target="_blank">Enlace LUCIDCHART:</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+     <!-- Control de convencionalidad -->
+<div class="semanas">
+        <div class="semana">
+          <h4>🗂️ Control de convencionalidad</h4>
+          <ul>
+            <li>📘 <a href="https://www.peruoea.org/derechos-humanos/#:~:text=La%20Convenci%C3%B3n%20Americana%20sobre%20Derechos%20Humanos%20establece%20que%20la%20Corte,Estados%20partes%20de%20la%20Convenci%C3%B3n%E2%80%9D." target="_blank">
+              REPRESENTACION PERMANENTE DEL PERÚ ANTE LA ORGANIZACION DE LOS ESTADOS AMERICANOS</a></li>
+            <li>📘 <a href="https://www.derechoshumanos.net/tribunales/TribunalEuropeoDerechosHumanos-TEDH.htm#:~:text=El%20Tribunal%20Europeo%20de%20Derechos,las%20Libertades%20Fundamentales%20(CEDH)%20y" target="_blank">
+              FUNDACIÓN ACCIÓN PRO DERECHO HUMANOS</a></li>
+            <li>📘 <a href="https://www.oas.org/es/CIDH/jsForm/?File=%2Fes%2Fcidh%2Fmandato%2Fque.asp" target="_blank">
+              COMISIÓN INTERAMERICANA DE DERECHOS HUMANOS</a></li>
+            <li>📘 <a href="https://www.corteidh.or.cr/" target="_blank">
+              CORTE INTERAMERICANA DE DERECHOS HUMANOS</a></li>
+          </ul>
+          </ul>
+        </div>
+        <div class="semana">
+          <h4>📬 Foros</h4>
+          <ul>
+            <p>Estimad@ estudiante visualice con mucha atención el video sobre 🎥<a href="https://www.youtube.com/watch?v=QYszYuebSuw&ab_channel=IUS360" target="_blank"> el Constitucionalismo Garantista</a> presentado por el jurista italiano Luigi Ferrajoli (8:32 minutos) .</p>
+           <p>Analice los argumentos y presente sus aportes en atención a las siguientes preguntas:</p> 
+           <p>1. ¿Qué es el 🎥<a href="https://www.youtube.com/watch?v=QYszYuebSuw&ab_channel=IUS360" target="_blank">Constitucionalismo Garantista</a> ?</p> 
+           <p>2. ¿Cuál es su posición personal respecto al argumento desarrollado por el jurista Luigi Ferrajoli? Responda a las preguntas propuestas y comente una de las intervenciones que ha realizado alguno de sus compañeros.</p> 
+            <a href="foro_digital/ForoUnidad_1.html"><h4>📬 RESPONDER FORO</h4></a>
+           <li>📘 <a href="https://estudiantesavp.ucontinental.edu.pe/pluginfile.php/748363/mod_resource/content/2/02418-2021-AA%20-%20Caso%20MP%20San%20Mart%C3%ADn%20-%20A%20ALGOZ%20SJ%20SAC.pdf" target="_blank">Exp. 02418-2021-AA - Caso MP San Martín - A ALGOZ SJ SAC</a></li>
+            <li>📝 <a href="https://estudiantesavp.ucontinental.edu.pe/pluginfile.php/748364/mod_resource/content/1/Exp.%2001513-2024-PHC-TC%20-%20Caso%20Vladimir%20Cerr%C3%B3n.pdf" target="_blank">Exp. 01513-2024-PHC-TC - Caso Vladimir Cerrón</a></li>
+            <h3>El Constitucionalismo Garantista</h3>
+            <p>El Constitucionalismo Garantista: Luigi Ferrajoli</p>
+          </ul>
+        </div>
+          </ul>
+        </div>
+
+    <!-- Unidad 2 -->
+  
+    <section id="unidad2" class="unidad unidad2">
+      <h2>⚙️ Unidad II: Argumentación jurídica</h2>
+      <h3>Resultado de aprendizaje de la unidad:</h3>
+Al finalizar la Unidad, el estudiante será capaz de comparar las concepciones de la argumentación jurídica, para el ejercicio del derecho y la justificación de las decisiones jurídicas.
+     <div class="semanas">
+        <div class="semana">
+          <h4>📅 Semana 5</h4>
+          <ul>
+            <li>📘 <a href="UNIDADES/TEMA 5 - Concepcion formal - Las inferencias y sus clases 2025-10.pdf" target="_blank"><strong>PRESENTACIONES</strong></a></li>
+            <li>📚 <a href="Lectura/Lecturas/Martínez_teoría_argumentación_jurídica_contexto_Iberoamericano.pdf" target="_blank">
+            Lectura (ver)⬇️</a></li>
+            <li>📝 <a href="https://estudiantesavp.ucontinental.edu.pe/pluginfile.php/748370/mod_resource/content/5/Gu%C3%ADa%20N.%C2%B0%205%20-%20Concepci%C3%B3n%20formal.pdf" target="_blank">Guía N.° 5 - Concepción formal</a></li>
+            <li>🗺️ <strong>Actividad N.° 5: Concepción formal (Tarea) </strong> Realicen un mapa conceptual con la herramienta digital <strong>CANVA</strong> de manera colaborativa sobre la concepción formal de la argumentación jurídica.</li>
+            <li>🔗 <a href="https://www.canva.com/es_co/graficos/mapa-conceptual/" target="_blank">Enlace CANVA:</a></li>
+          </ul>
+          </ul>
+        </div>
+        <div class="semana">
+          <h4>📅 Semana 6</h4>
+          <ul>
+            <li>📘 <a href="UNIDADES/Tema 6 - Concepción material - premisas y razones 2025-10.pdf" target="_blank"><strong>PRESENTACIONES</strong></a></li>
+            <li>📚 <a href="Lectura/Lecturas/Concepción material de la argumentacion.pdf" target="_blank">Lectura (ver)⬇️</a></li>
+            <li>📝 <a href="https://estudiantesavp.ucontinental.edu.pe/pluginfile.php/748380/mod_resource/content/5/Gu%C3%ADa%20N.%C2%B0%206%20-%20Concepci%C3%B3n%20material.pdf" target="_blank">Guía N.° 6 - Concepción material</a></li>
+            <li>🗺️ <strong>Actividad N.° 6: Concepción material:</strong> Realicen un mapa conceptual con la herramienta digital <strong>LUCIDCHART</strong>  de manera colaborativa sobre la concepción material de la argumentación jurídica. </li>
+            <li>🔗 <a href="https://www.lucidchart.com/pages/es/ejemplos/mapa-conceptual" target="_blank">Ir a LUCIDCHART</a></li>
+          </ul>
+     
+        </div>
+        <div class="semana">
+          <h4>📅 Semana 7</h4>
+          <ul>
+            <li>📘 <a href="UNIDADES/TEMA 7 - Concepción pragmática - elementos dialécticos y retóricos de la argumentación 2025-10.pdf" target="_blank"><strong>PRESENTACIONES</strong></a></li>
+            <li>📚 <a href="Lectura/Lecturas/Dimensiones de la argumentación.pdf"target="_blank">Lectura (ver)⬇️</a></li>
+            <li>📝 <a href="https://estudiantesavp.ucontinental.edu.pe/pluginfile.php/748389/mod_resource/content/4/Gu%C3%ADa%20N.%C2%B0%207%20-%20Concepci%C3%B3n%20pragm%C3%A1tica.pdf" target="_blank">Guía N.° 7 - Concepción pragmática</a></li>
+            <li>🗺️ <strong>Actividad N.° 7: Concepción pragmática</strong>
+              <p>Realicen un mapa conceptual con la herramienta digital <strong> MINDMEISTER</strong>de manera colaborativa sobre la concepción pragmática de la argumentación jurídica.</p>
+            <li>🔗 <a href="https://www.mindmeister.com/es" target="_blank">Enlace MINDMEISTER:</a></li>
+          </ul>
+        </div>
+        <div class="semana">
+          <h4>📅 Semana 8</h4>
+          <ul>
+            <li>📘<a href="UNIDADES/TEMA 8 - La retorica y la dialectica en la argumentacion juridica 2025-10.pdf" target="_blank"><strong>PRESENTACIONES</strong></a></li>
+            <li>📚 <a href="Lectura/LecturaSemana8/"target="_blank">Lectura (ver)⬇️</a></li>
+            <li>🚩 <strong>Evaluación Unidad 2:</strong>
+            <li>✅ <a href="https://estudiantesavp.ucontinental.edu.pe/pluginfile.php/1784624/mod_resource/content/1/R%C3%BAbrica%20de%20evaluaci%C3%B3n%20-%20Unidad%202%20-%20C1.pdf" target="_blank">Rúbrica de evaluación - Unidad 2 - C1</a></li>
+            <li>✅ <a href="https://estudiantesavp.ucontinental.edu.pe/pluginfile.php/1784625/mod_resource/content/1/NRC%2026041%20-%20Equipos%20conformados%20Evaluaci%C3%B3n%20Unidad%202.pdf" target="_blank">NRC 26041 - Equipos conformados Evaluación Unidad 2</a></li>
+            <li>✅ <a href="https://estudiantesavp.ucontinental.edu.pe/pluginfile.php/1784629/mod_resource/content/1/Equipo%201%20-%20STC%20Exp.%20N.%C2%B0%2000003-2022-CC.pdf" target="_blank">Equipo 1 - STC Exp. N.° 00003-2022-CC</a></li>
+            <li>✅ <a href="https://estudiantesavp.ucontinental.edu.pe/pluginfile.php/1784630/mod_resource/content/1/Equipo%202%20-%20STC%20Exp.%20N.%C2%B0%2000004-2023-CC.pdf" target="_blank">Equipo 2 - STC Exp. N.° 00004-2023-CC</a></li>
+            <li>✅ <a href="https://estudiantesavp.ucontinental.edu.pe/pluginfile.php/1784634/mod_resource/content/1/Equipo%203%20-%20STC%20Exp.%20N.%C2%B0%2000007-2021-CC.pdf" target="_blank">Equipo 3 - STC Exp. N.° 00007-2021-CC</a></li>
+            <li>✅ <a href="https://estudiantesavp.ucontinental.edu.pe/pluginfile.php/1784641/mod_resource/content/1/Equipo%204%20-%20STC%20Exp.%20N.%C2%B0%2000011-2023-AI.pdf" target="_blank">Equipo 4 - STC Exp. N.° 00011-2023-AI</a></li>
+            <li>✅ <a href="https://estudiantesavp.ucontinental.edu.pe/pluginfile.php/1784750/mod_resource/content/1/Equipo%205%20-%20STC%20Exp.%20N.%C2%B0%2000023-2021-AI.pdf" target="_blank">Equipo 5 - STC Exp. N.° 00023-2021-AI</a></li>
+            <li>✅ <a href="https://estudiantesavp.ucontinental.edu.pe/pluginfile.php/1784814/mod_resource/content/1/Equipo%206%20-%20STC%20Exp.%20N.%C2%B0%2000233-2022-AA.pdf" target="_blank">Equipo 6 - STC Exp. N.° 00233-2022-AA </a></li>
+            <li>✅ <a href="https://estudiantesavp.ucontinental.edu.pe/pluginfile.php/1784817/mod_resource/content/1/Equipo%207%20-%20STC%20Exp.%20N.%C2%B0%2000238-2021-AA.pdf" target="_blank">Equipo 7 - STC Exp. N.° 00238-2021-AA </a></li>
+            <li>✅ <a href="https://estudiantesavp.ucontinental.edu.pe/pluginfile.php/1784824/mod_resource/content/1/Equipo%208%20-%20STC%20Exp.%20N.%C2%B0%2001606-2018-HC.pdf" target="_blank">Equipo 8 - STC Exp. N.° 01606-2018-HC </a></li>
+            
+          </ul>
+        </div>
+    </section>
+    <!-- Control de convencionalidad -->
+<div class="semanas">
+        <div class="semana">
+          <h4>🚩 Evaluación parcial: Unidades I y II </h4>
+          <p>Estimad@ s estudiantes sírvanse subir cada uno su proyecto en archivo word o pdf al enlace habiltado, para ello debe tener en cuenta los criterios establecidos en la rúbrica de evaluación, consignando en la carátula los nombres y apellidos de los estudiantes que participaron en la elaboración del mismo y su porcentaje de participación.
+Cada grupo cuenta con un tiempo máximo de presentación de 30 minutos . Todos los integrantes deben participar formulando su argumentación oral, el mismo que debe considerar un tiempo de 4 minutos cada uno.
+El examen debe rendirse el día señalado, dentro de nuestro horario de clases.</p>
+<h4>Aprendizaje basado en proyectos</h4>
+          <ul>
+            <li>📘 <a href="https://estudiantesavp.ucontinental.edu.pe/pluginfile.php/748410/mod_resource/content/0/R%C3%BAbrica%20de%20evaluaci%C3%B3n%20parcial.pdf" target="_blank">
+              Rúbrica de evaluación parcial </a></li>
+            <li>📘 <a href="https://estudiantesavp.ucontinental.edu.pe/pluginfile.php/748411/mod_resource/content/1/Elaboraci%C3%B3n%20de%20un%20proyecto%20-%20Evaluaci%C3%B3n%20parcial%20-%20NRC%2026041.pdf" target="_blank">
+            Trabajo práctico grupal - Elaboración de un proyecto - Evaluación parcial - NRC 26041 </a></li>
+            <li>📘 <a href="https://estudiantesavp.ucontinental.edu.pe/pluginfile.php/748412/mod_resource/content/6/NRC%2026041%20-%20Invicta%20-%20Parcial.pdf" target="_blank">
+            Grupos conformados - Evaluación parcial </a></li>
+            <li>📘 <a href="https://estudiantesavp.ucontinental.edu.pe/pluginfile.php/748413/mod_resource/content/1/Caso%20Ivcher%20Bronstein%20vs.%20Per%C3%BA%20-%20Corte%20IDH.pdf" target="_blank">
+              Grupo 1 - Caso Ivcher Bronstein vs. Perú - Corte IDH </a></li>
+              <li>📘 <a href="https://estudiantesavp.ucontinental.edu.pe/pluginfile.php/748414/mod_resource/content/1/Caso%20Azul%20Rojas%20Marin%20vs.%20Per%C3%BA%20-%20Corte%20IDH.pdf" target="_blank">
+              Grupo 2 - Caso Azul Rojas Marin vs. Perú - Corte IDH </a></li>
+              <li>📘 <a href="https://estudiantesavp.ucontinental.edu.pe/pluginfile.php/748415/mod_resource/content/1/Caso%20Terrones%20Silva%20y%20otros%20vs.%20Per%C3%BA%20-%20Corte%20IDH.pdf" target="_blank">
+              Grupo 3 - Caso Terrones Silva y otros vs. Perú - Corte IDH </a></li>
+              <li>📘 <a href="https://estudiantesavp.ucontinental.edu.pe/pluginfile.php/748416/mod_resource/content/1/Caso%20Cuya%20Lavy%20y%20otros%20vs.%20Per%C3%BA%20-%20Corte%20IDH.pdf" target="_blank">
+              Grupo 4 - Caso Cuya Lavy y otros vs. Perú - Corte IDH </a></li>
+              <li>📘 <a href="https://estudiantesavp.ucontinental.edu.pe/pluginfile.php/748417/mod_resource/content/1/Caso%20ANCEJUB%20SUNAT%20vs%20Per%C3%BA%20-%20Corte%20IDH.pdf" target="_blank">
+              Grupo 5 - Caso ANCEJUB SUNAT vs Perú - Corte IDH </a></li>
+              <li>📘 <a href="https://estudiantesavp.ucontinental.edu.pe/pluginfile.php/748418/mod_resource/content/1/Caso%20Cajahuanca%20V%C3%A1squez%20vs.%20Per%C3%BA%20-%20Corte%20IDH.pdf" target="_blank">
+              Grupo 6 - Caso Cajahuanca Vásquez vs. Perú - Corte IDH</a></li>
+              <li>📘 <a href="https://estudiantesavp.ucontinental.edu.pe/pluginfile.php/748419/mod_resource/content/1/Caso%20Canales%20Huapaya%20y%20otros%20vs.%20Per%C3%BA%20-%20Corte%20IDH.pdf" target="_blank">
+              Grupo 7 - Caso Canales Huapaya y otros vs. Perú - Corte IDH </a></li>
+              <li>📘 <a href="https://estudiantesavp.ucontinental.edu.pe/pluginfile.php/748420/mod_resource/content/1/Caso%20La%20Oroya%20vs%20Peru%20-%20Corte%20IDH.pdf" target="_blank">
+              Grupo 8 - Caso La Oroya vs Peru - Corte IDH </a></li>
+          </ul>
+          </ul>
+        </div>
+        <div class="semana">
+          <h4>📬 Foros</h4>
+          <ul>
+           <p>Estimad@ estudiante revise la lectura: <a href="https://www.youtube.com/watch?v=QYszYuebSuw&ab_channel=IUS360" target="_blank">"Importancia de la formación ética de la abogacía"</a> de Elsa Roca-Moreyra Salonen y presente sus aportes en atención a las siguientes preguntas:</p> 
+           <h5>1. A partir del análisis de la lectura, en su reflexión personal: ¿Cuál es la importancia de la formación ética de la abogacía?</h5> 
+           <h5>2. Desde el ámbito de la deontología jurídica ¿Qué aspectos considera usted como atributo (s) de un buen abogad@?
+            Responda a las preguntas propuestas y comente una de las intervenciones que ha realizado alguno de sus compañeros.</h5> 
+           <a href="foro_digital/ForoUnidad_2.html"><h4>📬 RESPONDER FORO</h4></a>
+           <li><li>📘 <a 
+            href="https://estudiantesavp.ucontinental.edu.pe/pluginfile.php/748406/mod_resource/content/0/Importancia%20de%20la%20formaci%C3%B3n%20%C3%A9tica%20de%20la%20abogac%C3%ADa.pdf" 
+            target="_blank">Importancia de la formación ética de la abogacía</a></li>
+          </ul>
+        </div>
+          </ul>
+        </div>
+
+    <!-- Unidad 3 -->
+    <section id="unidad3" class="unidad unidad3">
+      <h2>🛠️ Unidad III: Análisis y evaluación de las argumentaciones</h2>
+       <h3>Resultado de aprendizaje de la unidad:</h3>
+      <p>Al finalizar la unidad, el estudiante será capaz de valorar los principios éticos de la profesión y sus implicancias en el desarrollo de la actividad de jueces y operadores jurídicos encargados de la interpretación y aplicación del derecho.</p>
+      <div class="semanas">
+        <div class="semana">
+          <h4>📅 Semana 9</h4>
+          <ul>
+            <li>📘 <a href="UNIDADES/Tema 9 - Analizar evaluar y argumentar.pdf" target="_blank"><strong>PRESENTACIONES</strong></a></li>
+            <li>📚 <a href="Lectura/LecturaSemana9/"target="_blank">Lectura (ver)⬇️</a></li>
+            <li>📝 <a href="https://estudiantesavp.ucontinental.edu.pe/pluginfile.php/748426/mod_resource/content/3/Gu%C3%ADa%20N.%C2%B0%209%20-%20Analizar%2C%20evaluar%20y%20argumentar.pdf" target="_blank">Guía N.° 9 - Analizar, evaluar y argumentar</a></li>
+            <li>🗺️ <strong>Actividad N.° 9: Debate </strong> Teniendo como insumo una sentencia de primera instancia, elabore su postura jurídica según el rol asignado en el grupo
+              conformado, considere el desarrollo de los 7 aspectos: hechos, pruebas, norma (s), doctrina, jurisprudencia, constitucionalismo, convencionalismo.</li>
+            <li>🎥 <a href="https://www.youtube.com/watch?v=LLQhYX_k5zs&ab_channel=IUS360" target="_blank">Caso Ricardo Morán</a></li>
+          </ul>
+        </div>
+        <div class="semana">
+          <h4>📅 Semana 10</h4>
+          <ul>
+            <li>📘 <a href="UNIDADES/Tema 10 - Cuestiones controvertidas y casos difíciles 2025-10.pdf" target="_blank"><strong>PRESENTACIONES</strong></a></li>
+            <li>📚 <a href="Lectura/LecturaSemana10/"target="_blank">Lectura (ver)⬇️</a></li>
+            <li>📝 <a href="https://estudiantesavp.ucontinental.edu.pe/pluginfile.php/748436/mod_resource/content/4/Gu%C3%ADa%20N.%C2%B0%2010%20-%20Cuestiones%20controvertidas%20y%20casos%20dif%C3%ADciles.pdf" target="_blank">Guía N.° 10 - Cuestiones controvertidas y casos difíciles</a></li>
+            <li>🗺️ <strong>Actividad N.° 10: Debate </strong> Teniendo como insumo una sentencia de primera instancia, elabore su postura jurídica según el rol asignado en el grupo 
+              conformado, considere el desarrollo de los 7 aspectos: hechos, pruebas, norma (s), doctrina, jurisprudencia, constitucionalismo, convencionalismo.</li>
+            <li>🖥️<a href="UNIDADES/DEBATE-DEFENSA TECNICA-KEVIN MITACC.pdf"target="_blank">Actividad N.° 10: Debate</a></li>
+          </ul>
+        </div>
+        <div class="semana">
+          <h4>📅 Semana 11</h4>
+          <ul>
+            <li>📘 <a href="UNIDADES/Tema 11 - La evaluacion del razonamiento judicial 2025-10.pdf" target="_blank"><strong>PRESENTACIONES</strong></a></li>
+            <li>📚 <a href="Lectura/LecturaSemana11/" target="_blank">Lectura (ver)⬇️</a></li>
+            <li>📝 <a href="https://estudiantesavp.ucontinental.edu.pe/pluginfile.php/748445/mod_resource/content/3/Gu%C3%ADa%20N.%C2%B0%2011%20-%20La%20evaluaci%C3%B3n%20del%20razonamiento%20judicial.pdf" target="_blank">Guía N.° 11 - La evaluación del razonamiento judicial </a></li>
+            <li>🗺️ <strong>Actividad N.° 11: Debate </strong>Teniendo como insumo una sentencia de segunda instancia, elabore su postura jurídica según el rol asignado en el grupo
+              conformado, considere sustentar los agravios que se expresan en el recurso de apelación interpuesto.</li>
+            <li>📝❌ <a href="https://www"target="_blank">Actividad N.° 11: Debate</a></li>
+          </ul>
+        </div>
+        <div class="semana">
+          <h4>📅 Semana 12</h4>
+          <ul>
+            <li>📘 <a href="UNIDADES/Tema 12 - Criterios de evaluacion 2025-10.pdf" target="_blank"><strong>PRESENTACIONES</strong></a></li>
+            <li>📚 <a href="Lectura/LecturaSemana12/" target="_blank">Lectura (ver)⬇️</a></li>
+            <p>Casos fáciles y difíciles, justificación interna y externa en las decisiones judiciales</p>
+            <li>🎥 <a href="https://www.youtube.com/watch?v=Jhtqrh030hE&t=10s&ab_channel=LP-Pasi%C3%B3nporelDerecho" target="_blank"><strong>CASOS FÁCILES Y DIFÍCILES, JUSTIFICACIÓN INTERNA Y EXTERNA</strong> </a></li>
+            
+          </ul>
+        </div>
+    </section>
+<!--EVALUACIONES-->
+
+
+<div class="semanas">
+        <div class="semana">
+          <h4>🗂️ EVALUACIONES Y CASOS</h4>
+          <ul>
+            <li>📝 <a href="https:" target="_blank">
+              Evaluación de la Unidad 3 (Consolidado 2)</a></li>
+            <li>📘 <a href="https://estudiantesavp.ucontinental.edu.pe/pluginfile.php/748460/mod_resource/content/3/Consigna%20de%20trabajo%20-%20Evaluaci%C3%B3n%20Unidad%203.pdf" target="_blank">
+              Consigna de trabajo - Evaluación Unidad 3 </a></li>
+            <li>📘 <a href="https://estudiantesavp.ucontinental.edu.pe/pluginfile.php/748461/mod_resource/content/3/NRC%2026041%20-%20Rubrica%20de%20evaluacion%20U3.pdf" target="_blank">
+              Rúbrica de evaluación - Evaluación Unidad 3 </a></li>
+            <li>📘 <a href="https://estudiantesavp.ucontinental.edu.pe/pluginfile.php/748462/mod_resource/content/4/Grupos%20NRC%2026041.pdf" target="_blank">
+              Grupos de trabajo: NRC 26041 </a></li>
+              <li>📘 <a href="https://estudiantesavp.ucontinental.edu.pe/pluginfile.php/748463/mod_resource/content/4/Expediente%2051-08.pdf" target="_blank">
+              Expediente 51-08  </a></li>
+              <li>📘 <a href="https://estudiantesavp.ucontinental.edu.pe/pluginfile.php/748464/mod_resource/content/5/Expediente%20103-2008.pdf" target="_blank">
+              Expediente 103-2008 </a></li>
+              <li>📘 <a href="https://estudiantesavp.ucontinental.edu.pe/pluginfile.php/748466/mod_resource/content/7/Expediente%20480-08.pdf" target="_blank">
+              Expediente 480-08  </a></li>
+              <li>📘 <a href="https://estudiantesavp.ucontinental.edu.pe/pluginfile.php/748467/mod_resource/content/8/Expediente%2001105-2016-5-1826-JR-PE-02.pdf" target="_blank">
+              Expediente 01105-2016-5-1826-JR-PE-02  </a></li>
+              <li>📘 <a href="https://estudiantesavp.ucontinental.edu.pe/pluginfile.php/748469/mod_resource/content/10/Expediente%2002799-2022-0-1826-JR-PE-14.pdf" target="_blank">
+              Expediente 02799-2022-0-1826-JR-PE-14  </a></li>
+              <li>📘 <a href="https://estudiantesavp.ucontinental.edu.pe/pluginfile.php/748470/mod_resource/content/11/Expediente%2003030-2020-0-1801-JR-LA-09.pdf" target="_blank">
+              Expediente 03030-2020-0-1801-JR-LA-09 </a></li>
+              <li>📘 <a href="https://estudiantesavp.ucontinental.edu.pe/pluginfile.php/748471/mod_resource/content/12/Expediente%2003622-2021-0-1801-JR-PE-30.pdf" target="_blank">
+              Expediente 03622-2021-0-1801-JR-PE-30 </a></li>
+              <li>📘 <a href="https://estudiantesavp.ucontinental.edu.pe/pluginfile.php/748473/mod_resource/content/14/Expediente%2006323-2019-0-1801-JR-PE-43.pdf" target="_blank">
+              Expediente 06323-2019-0-1801-JR-PE-43 </a></li>
+              <li>📘 <a href="https://estudiantesavp.ucontinental.edu.pe/pluginfile.php/748474/mod_resource/content/15/Expediente%206836-2019.pdf" target="_blank">
+              Expediente 6836-2019 </a></li>
+              <li>📘 <a href="https://estudiantesavp.ucontinental.edu.pe/pluginfile.php/748475/mod_resource/content/16/Expediente%2007387-2019-0-1801-JR-PE-05.pdf" target="_blank">
+              Expediente 07387-2019-0-1801-JR-PE-05 </a></li>
+              <li>📘 <a href="https://estudiantesavp.ucontinental.edu.pe/pluginfile.php/748477/mod_resource/content/18/Expediente%2018707-2011.pdf" target="_blank">
+              Expediente 18707-2011 </a></li>
+              <li>📘 <a href="https://estudiantesavp.ucontinental.edu.pe/pluginfile.php/748478/mod_resource/content/2/EXP.%2BN%C2%B0%2B44-2022-0%2BSENTENCIA.pdf" target="_blank">
+              Exp. 00044-2022-0-0201-SP-CI-01 </a></li>
+              <li>📘 <a href="https://estudiantesavp.ucontinental.edu.pe/pluginfile.php/748479/mod_resource/content/2/Exp.%2025158-2013-0-1801-JR-CI-02.pdf" target="_blank">
+              Exp. 25158-2013-0-1801-JR-CI-02 </a></li>
+              <li>📘 <a href="https://estudiantesavp.ucontinental.edu.pe/pluginfile.php/748480/mod_resource/content/1/Exp%2000670-2009-0-2901-JR-CI-02.pdf" target="_blank">
+              Exp. 00670-2009-0-2901-JR-CI-02 </a></li>
+              <li>📘 <a href="https://estudiantesavp.ucontinental.edu.pe/pluginfile.php/748481/mod_resource/content/1/Exp%2011216-2014.pdf" target="_blank">
+              Exp. 11216-2014 </a></li>
+          </ul>
+          </ul>
+        </div>
+        <div class="semana">
+          <h4>📬 FOROS</h4>
+          <ul>
+            <p>Estimad@ estudiante visualice con mucha atención el video sobre la distinción entre casos judiciales fáciles y difíciles y correspondientemente
+            entre justificación interna y externa es básicamente aceptable, pero necesita ser precisada y desarrollada; presentado por el jurista y filósofo
+            Manuel Atienza (7:21 minutos) .
+          <h4>Analice los argumentos y presente sus aportes en atención a las siguientes preguntas:</h4>
+           
+           <p>1. ¿Cuál es la distinción entre casos judiciales fáciles y difíciles?</a> ?</p> 
+           <p>2. ¿En qué consiste la justificación interna y externa de las decisiones judiciales?</p> 
+            <a href="foro_digital/ForoUnidad_3.html"><h4>📬 RESPONDER FORO</h4></a>
+        
+            
+            <p>Responda a las preguntas propuestas y comente una de las intervenciones que ha realizado alguno de sus compañeros.</p>
+          </ul>
+        </div>
+          </ul>
+        </div>
+    <!-- Unidad 4 -->
+    <section id="unidad4" class="unidad unidad4">
+      <h2>🎓 Unidad IV: La argumentación y sus contextos</h2>
+      <p> Resultado de aprendizaje de la unidad:</p>
+      <div class="semanas">
+        <div class="semana">
+          <h4>📅 Semana 13</h4>
+          <ul>
+            <li>📘 <a href="UNIDADES/Tema 13 - Etapas argumentivas 2025-10.pdf" target="_blank"><strong>PRESENTACIONES</strong></a></li>
+            <li>📚 <a href="Lectura/Lecturas/Composición de textos argumentativos.pdf"target="_blank">Lectura (ver)⬇️</a></li>
+            <li>📝 <a href="https://estudiantesavp.ucontinental.edu.pe/pluginfile.php/748487/mod_resource/content/3/Gu%C3%ADa%20N.%C2%B0%2013%20-%20Etapas%20argumentativas.pdf" 
+            target="_blank">Guía N.° 13 - Etapas argumentativas </a></li>
+            <li>📝 <a href="https://img.lpderecho.pe/wp-content/uploads/2022/10/RESOLUCION-1894-2022-SPC-INDECOPI-LPDerecho.pdf" 
+            target="_blank">Resolución Indecopi - Guía N° 13</a></li>
+          </ul>
+        </div>
+        <div class="semana">
+          <h4>📅 Semana 14</h4>
+          <ul>
+            <li>📘 <a href="UNIDADES/Tema 14 - La argumentación en los órganos colegiados 2025-10.pdf" target="_blank"><strong>PRESENTACIONES</strong></a></li>
+            <li>📚 <a href="Lectura/LecturaSemana14/"target="_blank">Lectura (ver)⬇️</a></li>
+            <li>📝 <a href="https://estudiantesavp.ucontinental.edu.pe/pluginfile.php/748497/mod_resource/content/3/Gu%C3%ADa%20N%C2%B0%2014.pdf" 
+            target="_blank">Guía N.° 14 </a></li>
+            <li>📝 <a href="https://estudiantesavp.ucontinental.edu.pe/pluginfile.php/748498/mod_resource/content/1/Sentencia%20Pozo%20Arias.pdf" 
+            target="_blank">Sentencia Pozo Arias </a></li>
+            <li>🖥️<a href="UNIDADES/HABEAS CORPUS-TRIBUNAL CONSTITUCIONAL.pdf"  
+            target="_blank">Actividad N.° 14: Debate</a></li>
+          </ul>
+        </div>
+        <div class="semana">
+          <h4>📅 Semana 15</h4>
+          <ul>
+            <li>📘 <a href="UNIDADES/Tema 15 - Argumentacion judicial y argumentacion juridica 2025-10.pdf" target="_blank"><strong>PRESENTACIONES</strong></a></li>
+            <li>📚 <a href="Lectura/Lecturas/La argumentación judicial - Control y responsabilidad de los órganos jurisdiccionales.pdf"target="_blank">Lectura (ver)⬇️</a></li>
+            <li>📝 <a href="https://estudiantesavp.ucontinental.edu.pe/pluginfile.php/748507/mod_resource/content/3/Gu%C3%ADa%20N%C2%B0%2015.pdf" 
+            target="_blank">Guía N.° 15 </a></li>
+          </ul>
+        </div>
+        <div class="semana">
+          <h4>📅 Semana 16</h4>
+          <ul>
+            <li>📘 <a href="UNIDADES/Tema 16 - Argumentación de los abogados 2025-10.pdf" target="_blank"><strong>PRESENTACIONES</strong></a></li>
+            <li>📚 <a href="Lectura/Lecturas/Sobre oralidad y argumentación jurídica.pdf"target="_blank">Lectura (ver)⬇️</a></li>
+            <li>📝 <a href="https://estudiantesavp.ucontinental.edu.pe/pluginfile.php/748514/mod_resource/content/2/Gu%C3%ADa%20N%C2%B0%2016%202023.pdf" 
+            target="_blank">Guía N° 16 </a></li>
+          </ul>
+        </div>
+    </section>
+<!--EVALUACIONES 4-->
+
+
+<div class="semanas">
+        <div class="semana">
+          <h4>🗂️ EVALUACIONES Y PORTAFOLIO</h4>
+          <ul>
+            <li>📝 <a href="UNIDADES/postura juridica-semana 15.pdf" target="_blank">
+            Evaluación de la Unidad 4 (Consolidado 2)</a></li>
+            <li>📘 <a href="https://estudiantesavp.ucontinental.edu.pe/pluginfile.php/748519/mod_resource/content/6/Consigna%20de%20trabajo%20-%20Evaluaci%C3%B3n%20Unidad%204.pdf" target="_blank">
+            Consigna de trabajo - Evaluación Unidad 4 </a></li>
+            <li>📘 <a href="https://estudiantesavp.ucontinental.edu.pe/pluginfile.php/748520/mod_resource/content/4/NRC%2026040%20-%20Rubrica%20de%20evaluacion%20U4.pdf" target="_blank">
+            Rúbrica de evaluación - Unidad 4 - C2 </a></li>
+            <li>📘 <a href="https://estudiantesavp.ucontinental.edu.pe/pluginfile.php/748521/mod_resource/content/6/Grupos%20NRC%2026041%20-%20U4.pdf" target="_blank">
+            Grupos evaluación Unidad 4 </a></li>
+            <li>📘 <a href="https://estudiantesavp.ucontinental.edu.pe/pluginfile.php/748522/mod_resource/content/1/Expediente%20N.%C2%B0%2000114-2020-0-3005-JR-CI-01%20-%20Constitucional%20-%20H%C3%A1beas%20Data.pdf" target="_blank">
+            Expediente N.° 00114-2020-0-3005-JR-CI-01 - Constitucional - Hábeas Data </a></li>
+            <li>📘 <a href="https://estudiantesavp.ucontinental.edu.pe/pluginfile.php/748525/mod_resource/content/1/Expediente%20N.%C2%B0%2006289-2024-0-1801-JR-DC-04%20-%20Constitucional%20-%20H%C3%A1beas%20Corpus.pdf" target="_blank">
+            Expediente N.° 06289-2024-0-1801-JR-DC-04 - Constitucional - Hábeas Corpus </a></li>
+            <li>📘 <a href="https://estudiantesavp.ucontinental.edu.pe/pluginfile.php/748526/mod_resource/content/1/Expediente%20N.%C2%B0%2000725-2022-0-1601-JR-CI-05%20-%20Constitucional%20-%20Amparo.pdf" target="_blank">
+            Expediente N.° 00725-2022-0-1601-JR-CI-05 - Constitucional - Amparo </a></li>
+            <li>📘 <a href="https://estudiantesavp.ucontinental.edu.pe/pluginfile.php/748527/mod_resource/content/1/Expediente%20N.%C2%B0%2001921-2019-0-1801-JR-LA-09.pdf" target="_blank">
+            Expediente N.° 01921-2019-0-1801-JR-LA-09 - Laboral </a></li>
+            <li>📘 <a href="https://estudiantesavp.ucontinental.edu.pe/pluginfile.php/748528/mod_resource/content/1/Expediente%20N.%C2%B0%2022700-2014-0-1801-JR-LA-10.pdf" target="_blank">
+            Expediente N.° 22700-2014-0-1801-JR-LA-10 - Laboral </a></li>
+            <li>📘 <a href="https://estudiantesavp.ucontinental.edu.pe/pluginfile.php/748531/mod_resource/content/1/Expediente%20N.%C2%B0%2000375-2021-0-1801-JR-CA-19%20-%20Contencioso%20Administrativo.pdf" target="_blank">
+            Expediente N.° 00375-2021-0-1801-JR-CA-19 - Contencioso Administrativo </a></li>
+            <li>📘 <a href="https://estudiantesavp.ucontinental.edu.pe/pluginfile.php/748533/mod_resource/content/1/Expediente%20N.%C2%B0%2003395-2010-0-1706-JR-CI-04%20-%20Civil.pdf" target="_blank">
+            Expediente N.° 03395-2010-0-1706-JR-CI-04 - Civil </a></li>
+            <li>📘 <a href="https://estudiantesavp.ucontinental.edu.pe/pluginfile.php/748534/mod_resource/content/1/Expediente%20N.%C2%B0%2002761-2016-0-1801-JR-LA-03%20-%20Laboral.pdf" target="_blank">
+            Expediente N.° 02761-2016-0-1801-JR-LA-03 - Laboral </a></li>
+            <li>📘 <a href="https://estudiantesavp.ucontinental.edu.pe/pluginfile.php/748535/mod_resource/content/1/Expediente%20N.%C2%B0%2000893-2015-0-2402-JR-CI-01%20-%20Civil.pdf" target="_blank">
+            Expediente N.° 00893-2015-0-2402-JR-CI-01 - Civil </a></li>
+            <li>📘 <a href="https://estudiantesavp.ucontinental.edu.pe/pluginfile.php/748536/mod_resource/content/1/Expediente%20N.%C2%B0%2002195-2015-1-0601-JR-PE-01%20-%20Penal.pdf" target="_blank">
+            Expediente N.° 02195-2015-1-0601-JR-PE-01 - Penal </a></li>
+            <li>📘 <a href="https://estudiantesavp.ucontinental.edu.pe/pluginfile.php/748537/mod_resource/content/1/Expediente%20N.%C2%B0%2000074-2011-6-1826-JR-PE-02%20-%20Penal.pdf" target="_blank">
+            Expediente N.° 00074-2011-6-1826-JR-PE-02 - Penal </a></li>
+            <li>📘 <a href="https://estudiantesavp.ucontinental.edu.pe/pluginfile.php/748538/mod_resource/content/1/Expediente%20N.%C2%B0%2000988-2020-0-1501-JR-LA-02%20-%20Laboral.pdf" target="_blank">
+            Expediente N.° 00988-2020-0-1501-JR-LA-02 - Laboral </a></li>
+            <li>📘 <a href="https://estudiantesavp.ucontinental.edu.pe/pluginfile.php/748539/mod_resource/content/1/Expediente%20N.%C2%B0%2011413-2019-0-1801-JR-LA-09%20-%20Laboral.pdf" target="_blank">
+            Expediente N.° 11413-2019-0-1801-JR-LA-09 - Laboral </a></li>
+            <li>📘 <a href="https://estudiantesavp.ucontinental.edu.pe/pluginfile.php/748540/mod_resource/content/2/Expediente-005615-2020-0-1801-JR-LA-07.pdf" target="_blank">
+            Expediente N.° 005615-2020-0-1801-JR-LA-07 - Laboral </a></li>
+          </ul>
+          </ul>
+        </div>
+        <div class="semana">
+          <h4>📬 FOROS</h4>
+          <ul>
+            <p>Estimad@ estudiante visualice con mucha atención el video sobre la distinción entre casos judiciales fáciles y difíciles y correspondientemente
+            entre justificación interna y externa es básicamente aceptable, pero necesita ser precisada y desarrollada; presentado por el jurista y filósofo
+            Manuel Atienza (7:21 minutos) .
+          <h4>Analice los argumentos y presente sus aportes en atención a las siguientes preguntas:</h4>
+          <p>1. ¿Cuál es la distinción entre casos judiciales fáciles y difíciles?</a> ?</p> 
+          <p>2. ¿En qué consiste la justificación interna y externa de las decisiones judiciales?</p> 
+            <a href="foro_digital/ForoUnidad_3.html"><h4>📬 RESPONDER FORO</h4></a>
+            <p>Responda a las preguntas propuestas y comente una de las intervenciones que ha realizado alguno de sus compañeros.</p>
+          </ul>
+        </div>
+      </ul>
+    </div>
+    <!-- Videos -->
+    <section id="videos" class="unidad videos">
+      <h2>🎬 Videos de Clase</h2>
+      <p>Biblioteca completa de videos educativos y grabaciones de clases</p>
+      <div class="semanas">
+        <div class="semana"><h4>Clases Magistrales</h4><ul><li>Introducción al curso</li><li>Conceptos fundamentales</li><li>Metodología de trabajo</li></ul></div>
+        <div class="semana"><h4>Tutoriales Prácticos</h4><ul><li>Tutorial básico</li><li>Ejercicios resueltos</li><li>Casos de uso avanzados</li></ul></div>
+        <div class="semana"><h4>Sesiones de Dudas</h4><ul><li>Sesión Q&A #1</li><li>Sesión Q&A #2</li><li>Resolución de dudas finales</li></ul></div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer"><h4>© Portafolio Digital - Curso Académico</h4>Desarrollado con fines educativos</div>
+    </footer>
+  </main>
+</body>
+</html>
+
+
